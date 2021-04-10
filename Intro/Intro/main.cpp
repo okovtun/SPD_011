@@ -255,6 +255,10 @@ A.set_y(3);*/
 	A.set_y(44);*/
 	A(33, 44);
 	cout << A << endl;
+
+	int a = 43;
+	cout << (char)a << endl;//явное преобразование (explicit conversion)
+
 }
 
 /*

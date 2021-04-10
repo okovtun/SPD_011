@@ -2,6 +2,10 @@ https://github.com/okovtun/SPD_011
 https://www.youtube.com/watch?v=yPB-sWkSuLE&list=PLeqyOOqxeiINLry6Ho7Xa0xBGZ-YwSsal
 
 TODO:
+1. В классе Fraction добить конструктор с одним параметром типа double;
+2. В новом проекте реализовать класс String, и все необходимые методы в этом классе;
+
+DONE:
 Реализовать класс Fraction, описывающий простую дробь. 
 В классе должны быть все обязательные методы, а так же методы:
 	- to_proper();		//Неправильную дробь переводит в правильную: 11/4 => 2(3/4)
