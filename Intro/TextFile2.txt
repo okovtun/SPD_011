@@ -1,0 +1,7 @@
+MoveMethods
+MoveConstructor - Конструктор переноса
+MoveAssignment  - Оператор присваивания переноса
+
+MoveMethods принимают НЕконстантную двойную ссылку на объект нашего класса
+Class(Class&& other);			//MoveConstructor
+Class& operator=(Class&& other);//MoveAssignment
