@@ -2,6 +2,11 @@ https://github.com/okovtun/SPD_011
 https://www.youtube.com/watch?v=yPB-sWkSuLE&list=PLeqyOOqxeiINLry6Ho7Xa0xBGZ-YwSsal
 
 TODO:
+1. Разделить класс Fraction на файлы. Сделать это в ветке fraction_separated;
+2. Создать проект Academy, в которм реализовать классы Student, Teacher и Graduate (Дипломник)
+   Подумать, как сюда применить наследование.
+
+DONE:
 1. В новом проекте реализовать класс String, и все необходимые методы в этом классе;
 2. В класс String добавить оператор [], и с его помощию упростить оператор +
 3. В класс String добавить MoveAssignment;

@@ -1,0 +1,9 @@
+class Base
+{
+	
+};
+
+class Derived:public Base
+{
+	//Этот класс наследует все свойства Base class.
+};
