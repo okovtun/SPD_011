@@ -1,4 +1,4 @@
-#include<iostream>
+п»ї#include<iostream>
 using namespace std;
 using std::cin;
 using std::cout;
@@ -11,15 +11,15 @@ String operator+(const String& left, const String& right);
 
 class String
 {
-	int size;	//Размер строки в Байтах
-	char* str;	//Указатель на строку в динамической памяти
+	int size;	//Р Р°Р·РјРµСЂ СЃС‚СЂРѕРєРё РІ Р‘Р°Р№С‚Р°С…
+	char* str;	//РЈРєР°Р·Р°С‚РµР»СЊ РЅР° СЃС‚СЂРѕРєСѓ РІ РґРёРЅР°РјРёС‡РµСЃРєРѕР№ РїР°РјСЏС‚Рё
 public:
 	int get_size()const
 	{
 		return size;
 	}
-	/* v возвращает константный указатель (нельзя изменить значение по адресу)*/
-	const char* get_str()const//Показывает что это константный метод
+	/* v РІРѕР·РІСЂР°С‰Р°РµС‚ РєРѕРЅСЃС‚Р°РЅС‚РЅС‹Р№ СѓРєР°Р·Р°С‚РµР»СЊ (РЅРµР»СЊР·СЏ РёР·РјРµРЅРёС‚СЊ Р·РЅР°С‡РµРЅРёРµ РїРѕ Р°РґСЂРµСЃСѓ)*/
+	const char* get_str()const//РџРѕРєР°Р·С‹РІР°РµС‚ С‡С‚Рѕ СЌС‚Рѕ РєРѕРЅСЃС‚Р°РЅС‚РЅС‹Р№ РјРµС‚РѕРґ
 	{
 		return str;
 	}
@@ -39,7 +39,7 @@ public:
 	{
 		/*
 		this->size = strlen(str) + 1;
-		this->str = new char[size] {};	//Это выполнит первый конструктор
+		this->str = new char[size] {};	//Р­С‚Рѕ РІС‹РїРѕР»РЅРёС‚ РїРµСЂРІС‹Р№ РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ
 		*/
 		for (int i = 0; str[i]; i++)
 			this->str[i] = str[i];
@@ -57,7 +57,7 @@ public:
 	{
 		/*this->size = other.size;
 		this->str = other.str;*/
-		other.str = nullptr;//Указатель на ноль (NULL pointer) - указатель в никуда.
+		other.str = nullptr;//РЈРєР°Р·Р°С‚РµР»СЊ РЅР° РЅРѕР»СЊ (NULL pointer) - СѓРєР°Р·Р°С‚РµР»СЊ РІ РЅРёРєСѓРґР°.
 		cout << "MoveConstructor:\t" << this << endl;
 	}
 	~String()
@@ -98,7 +98,7 @@ ostream& operator<<(ostream& os, const String& obj)
 
 String operator+(const String& left, const String& right)
 {
-	String result(left.get_size() + right.get_size() - 1);	//-1 убирает лишний ноль на конце
+	String result(left.get_size() + right.get_size() - 1);	//-1 СѓР±РёСЂР°РµС‚ Р»РёС€РЅРёР№ РЅРѕР»СЊ РЅР° РєРѕРЅС†Рµ
 	for (int i = 0; i < left.get_size(); i++)
 		*(result.get_str() + i) = *(left.get_str() + i);
 	for (int i = 0; i < right.get_size(); i++)
@@ -152,7 +152,7 @@ void main()
 	String str1 = "Hello";
 	String str2 = "World";
 	cout << delimiter << endl;
-	String str3 = str1 + str2;//Operator + будет выполнять конкатенацию (слияние, объединение) строк
+	String str3 = str1 + str2;//Operator + Р±СѓРґРµС‚ РІС‹РїРѕР»РЅСЏС‚СЊ РєРѕРЅРєР°С‚РµРЅР°С†РёСЋ (СЃР»РёСЏРЅРёРµ, РѕР±СЉРµРґРёРЅРµРЅРёРµ) СЃС‚СЂРѕРє
 	cout << delimiter << endl;
 	cout << str3 << endl;
 	String str4 = str3;
@@ -183,18 +183,18 @@ void main()
 	String str3("Hello");	//Single-argument constructor
 	str3.print();
 
-	String str4();	//Здесь НЕ вызывается конструктор по умолчанию, 
-					//здесь объявляется функция str4, которая ничего не принмает, 
-					//и возвращает значение типа String.
+	String str4();	//Р—РґРµСЃСЊ РќР• РІС‹Р·С‹РІР°РµС‚СЃСЏ РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ, 
+					//Р·РґРµСЃСЊ РѕР±СЉСЏРІР»СЏРµС‚СЃСЏ С„СѓРЅРєС†РёСЏ str4, РєРѕС‚РѕСЂР°СЏ РЅРёС‡РµРіРѕ РЅРµ РїСЂРёРЅРјР°РµС‚, 
+					//Рё РІРѕР·РІСЂР°С‰Р°РµС‚ Р·РЅР°С‡РµРЅРёРµ С‚РёРїР° String.
 	//str4.
-	String str5;	//Неявный вызов конструктора по умолчанию
+	String str5;	//РќРµСЏРІРЅС‹Р№ РІС‹Р·РѕРІ РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂР° РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ
 	str5.print();
-	String str6{};	//Явный вызов конструтора по умолчанию
+	String str6{};	//РЇРІРЅС‹Р№ РІС‹Р·РѕРІ РєРѕРЅСЃС‚СЂСѓС‚РѕСЂР° РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ
 	str6.print();
 
 	String str7(String str);
 	//str7("Hello");
-	String("Привет") == str3;	//Явный вызов конструктора для создания временного безымяного объекта.  
+	String("РџСЂРёРІРµС‚") == str3;	//РЇРІРЅС‹Р№ РІС‹Р·РѕРІ РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂР° РґР»СЏ СЃРѕР·РґР°РЅРёСЏ РІСЂРµРјРµРЅРЅРѕРіРѕ Р±РµР·С‹РјСЏРЅРѕРіРѕ РѕР±СЉРµРєС‚Р°.  
 #endif // CONSTRUCTORS_CALLING
 
 }
