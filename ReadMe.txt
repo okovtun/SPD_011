@@ -1,7 +1,14 @@
 https://github.com/okovtun/SPD_011
 https://www.youtube.com/watch?v=yPB-sWkSuLE&list=PLeqyOOqxeiINLry6Ho7Xa0xBGZ-YwSsal
 
+MATH:
+https://drive.google.com/drive/folders/1PtH0LBlm7PpmBcaE6mwBnkftAcEui32y?usp=sharing
+
 TODO:
+1. В проект Academy добавить класс Teacher;
+2. Для всех классов написать set-методы с фильтрацией данных;
+
+DONE:
 1. Разделить класс Fraction на файлы. Сделать это в ветке fraction_separated;
 2. Создать проект Academy, в которм реализовать классы Student, Teacher и Graduate (Дипломник)
    Подумать, как сюда применить наследование.

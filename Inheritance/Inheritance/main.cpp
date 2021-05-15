@@ -76,7 +76,7 @@ public:
 
 void main()
 {
-	setlocale(LC_ALL, "");
+	setlocale(LC_ALL, "");	
 	/*Box box;
 	box(2, 3, 4);
 	box.open();
