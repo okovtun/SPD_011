@@ -4,7 +4,23 @@ https://www.youtube.com/watch?v=yPB-sWkSuLE&list=PLeqyOOqxeiINLry6Ho7Xa0xBGZ-YwS
 MATH:
 https://drive.google.com/drive/folders/1PtH0LBlm7PpmBcaE6mwBnkftAcEui32y?usp=sharing
 
+Regex:
+https://www.cplusplus.com/reference/regex/
+https://www.cplusplus.com/reference/regex/ECMAScript/
+https://www.cplusplus.com/reference/regex/regex_match/
+
+Assembler:
+https://drive.google.com/drive/folders/1mIhAKMp5-Jpy6s5X8u924tRCXFEdHE_z?usp=sharing
+
 TODO:
+1. В проекте Academy для всех классов перегрузить оператор вывода (<<) и вывести группу на экран с его использованием;
+	for (int i = 0; i < sizeof(group)/sizeof(Human*); i++)
+	{
+		cout << *group[i] << endl;
+	}
+2. Построить иерархию объектов игры GTA;
+
+DONE:
 1. В проект Academy добавить класс Teacher;
 2. Для всех классов написать set-методы с фильтрацией данных;
 
