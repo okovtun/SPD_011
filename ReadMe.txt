@@ -13,6 +13,16 @@ Assembler:
 https://drive.google.com/drive/folders/1mIhAKMp5-Jpy6s5X8u924tRCXFEdHE_z?usp=sharing
 
 TODO:
+В класс ForwardList добавить методы:
+1. void erase(int index);		//Удаляет значение по заданному индексу
+2. Написать деструктор таким образом, чтобы он очищал список (удалял из него све элементы) перед удалением;
+3. Оптимировать методы удаления элементов;
+4. CopyMethods
+5. MoveMethods
+6. Обеспечить создание списка следующим образом:
+	ForwardList list = { 3, 5, 8, 13, 21 };
+
+DONE:
 1. В проекте Academy для всех классов перегрузить оператор вывода (<<) и вывести группу на экран с его использованием;
 	for (int i = 0; i < sizeof(group)/sizeof(Human*); i++)
 	{
