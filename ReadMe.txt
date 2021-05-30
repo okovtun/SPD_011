@@ -1,6 +1,23 @@
 https://github.com/okovtun/SPD_011
 https://www.youtube.com/watch?v=yPB-sWkSuLE&list=PLeqyOOqxeiINLry6Ho7Xa0xBGZ-YwSsal
 
+TODO:
+В класс ForwardList добавить методы:
+1. void erase(int index);		//Удаляет значение по заданному индексу
+2. Написать деструктор таким образом, чтобы он очищал список 
+	(удалял из него све элементы) перед удалением;				DONE
+3. Оптимировать методы добавления элементов и проходы по списку;
+4. CopyMethods		DONE
+5. MoveMethods
+6. Перегрузить оператор + таким образом, чтобы он выполнял конкатенацию списков;
+7. (Hardcore-чик)Обеспечить создание списка следующим образом:
+	ForwardList list = { 3, 5, 8, 13, 21 };
+8. (Hardcore)Обеспечить вывод списка на экран следующим образом:
+	for(int i:list)
+		cout << i << tab;
+	cout << endl;
+
+
 MATH:
 https://drive.google.com/drive/folders/1PtH0LBlm7PpmBcaE6mwBnkftAcEui32y?usp=sharing
 
@@ -12,15 +29,6 @@ https://www.cplusplus.com/reference/regex/regex_match/
 Assembler:
 https://drive.google.com/drive/folders/1mIhAKMp5-Jpy6s5X8u924tRCXFEdHE_z?usp=sharing
 
-TODO:
-В класс ForwardList добавить методы:
-1. void erase(int index);		//Удаляет значение по заданному индексу
-2. Написать деструктор таким образом, чтобы он очищал список (удалял из него све элементы) перед удалением;
-3. Оптимировать методы удаления элементов;
-4. CopyMethods
-5. MoveMethods
-6. Обеспечить создание списка следующим образом:
-	ForwardList list = { 3, 5, 8, 13, 21 };
 
 DONE:
 1. В проекте Academy для всех классов перегрузить оператор вывода (<<) и вывести группу на экран с его использованием;
