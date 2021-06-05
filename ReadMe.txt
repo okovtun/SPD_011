@@ -1,7 +1,27 @@
 https://github.com/okovtun/SPD_011
 https://www.youtube.com/watch?v=yPB-sWkSuLE&list=PLeqyOOqxeiINLry6Ho7Xa0xBGZ-YwSsal
 
+
+//////////////////////////////		   List			/////////////////////////////////////
+
 TODO:
+¬ двусв€зный список добавить методы:
+1. void push_back(int Data);
+2. void pop_front();
+3. void pop_back();
+4. void insert(int index, int data);
+5. void erase(int index);
+6. ƒеструктор должен очищать список;
+7. Ётот проверочный код должен заработать:
+	List list = {3,5,8,13,21};
+	for(int i:list)
+		cout << i << tab;
+	cout << endl;
+
+
+//////////////////////////////		ForwardList		/////////////////////////////////////
+
+DONE:
 ¬ класс ForwardList добавить методы:
 1. void erase(int index);		//”дал€ет значение по заданному индексу
 2. Ќаписать деструктор таким образом, чтобы он очищал список 
