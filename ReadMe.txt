@@ -1,10 +1,24 @@
 https://github.com/okovtun/SPD_011
 https://www.youtube.com/watch?v=yPB-sWkSuLE&list=PLeqyOOqxeiINLry6Ho7Xa0xBGZ-YwSsal
 
+BOOK:https://drive.google.com/drive/folders/1mIhAKMp5-Jpy6s5X8u924tRCXFEdHE_z?usp=sharing
+
+Music:
+https://www.youtube.com/watch?v=Z36qroO21pE
+https://www.youtube.com/watch?v=67u0v7obC5U&list=PL18B61C6111E5454F
+
+//////////////////////////////		   STL			/////////////////////////////////////
+
+TODO:
+1. В std::vector добавить значение по указанному индексу. Индекс и значение должны вводиться с клавиатуры.
+2. Удалить из Вектора значение по индексу;
+3. В std::list добавить значение по указанному индексу. Индекс и значение должны вводиться с клавиатуры.
+4. Удалить из std::list значение по индексу;
+ 
 
 //////////////////////////////		   List			/////////////////////////////////////
 
-TODO:
+DONE:
 В двусвязный список добавить методы:
 1. void push_back(int Data);
 2. void pop_front();
