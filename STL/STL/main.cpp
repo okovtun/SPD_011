@@ -2,7 +2,8 @@
 #include<string>
 #include<array>
 #include<vector>
-#include<LIST>
+#include<list>
+#include<map>
 #include<Windows.h>
 using std::cin;
 using std::cout;
@@ -32,7 +33,8 @@ template<typename T>void list_reverse_print(const std::list<T>& list);
 
 //#define ARRAY
 //#define VECTOR
-#define LIST
+//#define LIST
+#define MAP
 
 void main()
 {
@@ -111,9 +113,37 @@ void main()
 	int value;
 	cout << "Введите индекс добавляемого элемента: "; cin >> index;
 	cout << "Введите значение добавляемого элемента: "; cin >> value;
-
+	std::list<int>::iterator position = my_list.begin();
+	for (int i = 0; i < index; i++)++position;
+	my_list.insert(position, value);
 	list_print(my_list);
 #endif // LIST
+
+#ifdef MAP
+	//map - это контейнер, который хранит элементы в виде бинарного дерева.
+	//Кадый элемент map содержит ПАРУ "ключ - значение" (key - value).
+	std::map<int, std::string> week =
+	{
+		std::pair<int, std::string>(0, "Sunday"),
+		std::pair<int, std::string>(5, "Friday"),
+		std::pair<int, std::string>(1, "Monday"),
+		std::pair<int, std::string>(2, "Tuesday"),
+		std::pair<int, std::string>(3, "Wednesday"),
+		std::pair<int, std::string>(3, "Wednesday"),
+		std::pair<int, std::string>(3, "Wednesday"),
+		std::pair<int, std::string>(3, "Wednesday"),
+		std::pair<int, std::string>(3, "Wednesday"),
+		std::pair<int, std::string>(3, "Wednesday"),
+		std::pair<int, std::string>(3, "Wednesday"),
+		std::pair<int, std::string>(4, "Thursday"),
+		std::pair<int, std::string>(3, "Wednesday"),
+		std::pair<int, std::string>(6, "Saturday")
+	};
+	for (std::map<int, std::string>::iterator it = week.begin(); it != week.end(); it++)
+	{
+		cout << it->first << tab << it->second << endl;
+	}
+#endif // MAP
 
 }
 

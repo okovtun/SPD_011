@@ -7,10 +7,24 @@ Music:
 https://www.youtube.com/watch?v=Z36qroO21pE
 https://www.youtube.com/watch?v=67u0v7obC5U&list=PL18B61C6111E5454F
 
+C++:
+https://www.youtube.com/watch?v=kQ2TTgfvR94&list=PL0_nf9F9pvZNQsdlmE6s0UyixTnT4778Y
+http://www.winprog.org/tutorial/
+https://www.qt.io/
+https://doc.qt.io/qt-5/qtwidgets-tutorials-notepad-example.html
+https://www.boost.org/
+
 UML:
 https://www.softwareideas.net/en/download
 
 //////////////////////////////		   STL			/////////////////////////////////////
+
+TODO:
+https://github.com/okovtun/SPD_011/blob/master/STL/Task.txt
+
+BinaryTree:
+https://github.com/okovtun/VBU_022_CPP/tree/master/DataContainers/BinaryTree
+https://www.youtube.com/watch?v=oOxOLgiBSCQ&list=PLeqyOOqxeiINBBW5KUmcf-M4_wfb4yqKp&index=39
 
 TODO:
 1. В std::vector добавить значение по указанному индексу. Индекс и значение должны вводиться с клавиатуры.
