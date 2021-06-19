@@ -13,6 +13,13 @@ https://www.softwareideas.net/en/download
 //////////////////////////////		   STL			/////////////////////////////////////
 
 TODO:
+https://github.com/okovtun/SPD_011/blob/master/STL/Task.txt
+
+BinaryTree:
+https://github.com/okovtun/VBU_022_CPP/tree/master/DataContainers/BinaryTree
+https://www.youtube.com/watch?v=oOxOLgiBSCQ&list=PLeqyOOqxeiINBBW5KUmcf-M4_wfb4yqKp&index=39
+
+TODO:
 1. В std::vector добавить значение по указанному индексу. Индекс и значение должны вводиться с клавиатуры.
 2. Удалить из Вектора значение по индексу;
 3. В std::list добавить значение по указанному индексу. Индекс и значение должны вводиться с клавиатуры.
