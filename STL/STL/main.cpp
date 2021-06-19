@@ -2,6 +2,8 @@
 #include<string>
 #include<array>
 #include<vector>
+#include<LIST>
+#include<Windows.h>
 using std::cin;
 using std::cout;
 using std::endl;
@@ -24,8 +26,13 @@ template<typename T>void vector_properties(const std::vector<T>& vec);	//Про�
 template<typename T>void vector_print(const std::vector<T>& vec);
 template<typename T>void vector_reverse_print(const std::vector<T>& vec);
 
+template<typename T>void list_properties(const std::list<T>& list);
+template<typename T>void list_print(const std::list<T>& list);
+template<typename T>void list_reverse_print(const std::list<T>& list);
+
 //#define ARRAY
-#define VECTOR
+//#define VECTOR
+#define LIST
 
 void main()
 {
@@ -71,9 +78,43 @@ void main()
 	vector_print(s_vec);
 	vector_reverse_print(s_vec);
 	s_vec.size();
-	std::vector<int> v{};//Function declaration
+
+
+	SetConsoleCP(1251);
+	SetConsoleOutputCP(1251);
+	int index;
+	std::string value;
+	cout << "Введите индекс добавляемого элемента: "; cin >> index;
+	cout << "Введите значение добавляемого элемента: "; cin >> value;
+	std::vector<std::string>::iterator position = s_vec.begin() + index;
+	s_vec.insert(s_vec.begin() + index, 3, value);
+	vector_print(s_vec);
+	s_vec.insert(s_vec.begin() + 4, { "Ты", "заходи", "если", "что" });
+	vector_print(s_vec);
+	vector_properties(s_vec);
+	s_vec.assign(3, "Ёшкин 20");
+	s_vec.shrink_to_fit();
+	vector_print(s_vec);
+	vector_properties(s_vec);
 	//v.
 #endif
+
+#ifdef LIST
+	//List - это контейнер, который хранит данные в виде двусвязного списка.
+	std::list<int> my_list = { 3,5,8,13,21 };
+	list_properties(my_list);
+	my_list.push_front(2);
+	my_list.push_back(34);
+	list_print(my_list);
+	list_reverse_print(my_list);
+	int index;
+	int value;
+	cout << "Введите индекс добавляемого элемента: "; cin >> index;
+	cout << "Введите значение добавляемого элемента: "; cin >> value;
+
+	list_print(my_list);
+#endif // LIST
+
 }
 
 template<typename T>void vector_properties(const std::vector<T>& vec)
@@ -96,5 +137,23 @@ template<typename T>void vector_reverse_print(const std::vector<T>& vec)
 	{
 		cout << *rit << tab;
 	}
+	cout << endl;
+}
+
+template<typename T>void list_properties(const std::list<T>& list)
+{
+	cout << "Size:    " << list.size() << endl;;
+	cout << "MaxSize: " << list.max_size() << endl;;
+}
+template<typename T>void list_print(const std::list<T>& list)
+{
+	for (typename std::list<T>::const_iterator it = list.begin(); it != list.end(); it++)
+		cout << *it << tab;
+	cout << endl;
+}
+template<typename T>void list_reverse_print(const std::list<T>& list)
+{
+	for (typename std::list<T>::const_reverse_iterator it = list.crbegin(); it != list.crend(); it++)
+		cout << *it << tab;
 	cout << endl;
 }

@@ -7,6 +7,9 @@ Music:
 https://www.youtube.com/watch?v=Z36qroO21pE
 https://www.youtube.com/watch?v=67u0v7obC5U&list=PL18B61C6111E5454F
 
+UML:
+https://www.softwareideas.net/en/download
+
 //////////////////////////////		   STL			/////////////////////////////////////
 
 TODO:
